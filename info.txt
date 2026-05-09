@@ -1,0 +1,31 @@
+1-Bosqich: Loyiha poydevori va Ma'lumotlar bazasi
+
+Avvalo, ma'lumotlar bazasini qurib olamiz. Talabga ko'ra kamida 3 ta jadval bo'lishi shart.  
+
+database/portfolio.sql faylini tayyorlaymiz:
+
+    users jadvali (id, full_name, email, password, role, created_at).
+
+    categories jadvali (id, name).
+
+    projects jadvali (id, user_id, category_id, title, description, image_path, created_at).
+
+2-Bosqich: Konfiguratsiya va OOP Sinflari
+
+Sun’iy intellekt yozganiga o‘xshamasligi uchun haddan tashqari murakkab "design pattern"lardan qochamiz, 
+lekin topshiriqdagi OOP talablarini (Inheritance, Encapsulation) a'lo darajada bajaramiz.  
+
+    config/db.php: PDO ulanishi.
+
+    classes/User.php va classes/AdminUser.php: Foydalanuvchi mantiqi.  
+
+    classes/Project.php: Loyihalar bilan ishlash (CRUD).  
+
+3-Bosqich: Captcha va Xavfsizlik (Eng nozik joyi)
+
+Topshiriqda 3 marta xato kiritilsa bloklash va 7 kunlik "Remember Me" funksiyasi so'ralgan. 
+Buni mantiqan juda puxta yozishimiz kerakki, "ustoz" tekshirganda qoyil qolsin.  
+4-Bosqich: Frontend va UI (Frameworksiz)
+
+Faqat sof CSS! GitHub'da chiroyli ko'rinishi uchun zamonaviy, toza (clean UI) dizayn tanlaymiz. 
+Har bir sahifa (index, login, register, dashboard) alohida va mantiqiy bog'langan bo'ladi.
