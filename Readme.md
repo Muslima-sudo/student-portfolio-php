@@ -1,7 +1,6 @@
-==================================================
 STUDENT PORTFOLIO VA BOSHQARUV TIZIMI
 "Web Texnologiyalar" fani uchun yakuniy loyiha
-==================================================
+
 
 Texnologiyalar: PHP (sof), MySQL (PDO), HTML, CSS (Frameworksiz).
 Muhit: LAMP Stack (Linux, MySQL, PHP lokal serveri)
